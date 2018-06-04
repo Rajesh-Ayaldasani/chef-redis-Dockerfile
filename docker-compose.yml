@@ -1,0 +1,15 @@
+version: '3'
+services:
+   mysql:
+     build: /root/Desktop/mysql/
+     image: centos/mysql:v6
+     ports:
+      - 3306:3306
+ 
+   redis:
+     build: /root/Desktop/redis/
+     image: centos/redis:v6
+     ports:
+      - 6379:6379
+
+   
